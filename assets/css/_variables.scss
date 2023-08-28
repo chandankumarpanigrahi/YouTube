@@ -1,0 +1,33 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// ===== Light Colors =====
+$body-color: #ffffff;
+$text-primary: #0f0f0f;
+$text-secondary: #0f0f0f;
+$text-selection-bg: #5766db;
+$text-selection-text: #d7dbff;
+
+// ===== Dark Colors =====
+$dark-body-color: #0f0f0f;
+$dark-text-primary: #ffffff;
+$dark-text-secondary: #ffffff;
+
+// ====== Transition ======
+$tran-03: all 0.3s ease;
+$tran-04: all 0.3s ease;
+$tran-05: all 0.5s ease;
+
+// Font Sizes
+$regular-font-size: 18px;
+$small-font-size: $regular-font-size - 2px;
+$big-font-size: $regular-font-size + 2px;
+$icon-font-size: 26px;
+
+// Font Weights
+$regular-font-weight: 400;
+$bold-font-weight: 500;
+$bolder-font-weight: 600;
+$bold-icons: 500;

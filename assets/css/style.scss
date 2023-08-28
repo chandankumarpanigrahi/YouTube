@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: $tran-05;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+    background-color: $text-selection-bg ;
+    color: $text-selection-text;
+}
+
+.card{
+    @include card();
+}
+
+body{
+    &.light{
+        background-color: $body-color;
+    }
+    &.dark{
+        background-color: $dark-body-color;
+    }
+}
+.icon{
+    font-size: $icon-font-size;
+    font-weight: $bold-icons;
+}
