@@ -30,6 +30,19 @@ body.light {
 body.light .menu i {
   color: #0f0f0f;
 }
+body.light .search_btn {
+  background-color: #ffffff;
+  color: #0f0f0f;
+  border-color: #0f0f0f;
+}
+body.light .search_bar input {
+  background-color: #ffffff;
+  color: #0f0f0f;
+}
+body.light .search_bar span {
+  background-color: #e3e3e3;
+  color: #0f0f0f;
+}
 body.dark {
   background-color: #0f0f0f;
 }
@@ -52,7 +65,7 @@ body.dark .search_btn {
   padding: 10px;
 }
 .menu img {
-  width: 125px;
+  width: 120px;
   margin-left: 12px;
 }
 .menu i::before {
@@ -84,7 +97,8 @@ header {
 }
 
 .search_btn {
-  padding: 7px;
+  border-color: #0f0f0f;
+  padding: 7px 10px;
   border-radius: 50%;
   margin: 8px 4px;
   height: 38px;
