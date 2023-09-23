@@ -74,8 +74,12 @@ body {
         }
 
         .search_btn {
-            background-color: $dark-body-secondary;
             color: $dark-text-secondary;
+
+            &.active_btn {
+                background-color: $dark-body-secondary;
+
+            }
         }
     }
 }
@@ -103,9 +107,13 @@ body {
 header {
     display: flex;
     width: 100%;
+    position: relative;
 }
 
 .search_bar {
+    width: 50%;
+    margin-left: auto;
+
     input {
         background-color: $dark-body-tertiary;
         border-radius: 25px;
@@ -127,6 +135,29 @@ header {
     }
 }
 
+.profile_options {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    width: 250px;
+    background-color: #282828;
+    color: white;
+    border-radius: 8px;
+
+    &.active_profile {
+        display: block !important;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0.4rem 1rem;
+
+        button {
+            color: #fff;
+        }
+    }
+}
+
 .search_btn {
     border-color: $dark-body-color;
     padding: 7px 10px;
@@ -134,6 +165,12 @@ header {
     margin: 8px 4px;
     height: 38px;
     width: 38px;
+
+    .profile-image {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
 }
 
 .menu_items {

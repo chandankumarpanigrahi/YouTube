@@ -67,11 +67,22 @@
                     <header>
                         <div class="search_bar input-group mb-3">
                             <input type="text" class="form-control" placeholder="Search" aria-label="Username"
-                            aria-describedby="basic-addon1">
+                                aria-describedby="basic-addon1">
                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
                         </div>
-                        <button class="btn search_btn"><i class="bi bi-mic-fill"></i></button>
-                        <button id="toggleButton" class="btn btn-info my-3">OK</button>
+                        <button class="btn search_btn active_btn me-auto"><i class="bi bi-mic-fill"></i></button>
+                        <button class="btn search_btn"><i class="far fa-video-plus"></i></button>
+                        <button class="btn search_btn"><i class="far fa-bell"></i></button>
+                        <button class="btn search_btn p-0 me-3" onclick="showProfile()"><img
+                                src="./assets/images/unnamed (6).jpg" alt="profile image"
+                                class="profile-image" /></button>
+
+                        <div class="profile_options" id="profile" style="display: none;">
+                            <ul>
+                                <li>Appearance: <button class="btn" id="toggleButton">Dark</button></li>
+                            </ul>
+
+                        </div>
                     </header>
                     <div class="scrolling_item_tabs">
                         <button type="button" class="btn btn_tabs active">All</button>
@@ -135,6 +146,12 @@
 
 <script type="text/javascript">
     loginContent('dashboard');
+</script>
+
+<script>
+    function showProfile() {
+        document.getElementById("profile").classList.toggle("active_profile");
+    }
 </script>
 
 </html>

@@ -66,8 +66,10 @@ body.dark .menu i {
   color: #ffffff;
 }
 body.dark .search_btn {
-  background-color: #222222;
   color: #cbcbcb;
+}
+body.dark .search_btn.active_btn {
+  background-color: #222222;
 }
 
 .icon {
@@ -91,8 +93,13 @@ body.dark .search_btn {
 header {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
+.search_bar {
+  width: 50%;
+  margin-left: auto;
+}
 .search_bar input {
   background-color: #121212;
   border-radius: 25px;
@@ -112,6 +119,26 @@ header {
   padding: 0 20px;
 }
 
+.profile_options {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  width: 250px;
+  background-color: #282828;
+  color: white;
+  border-radius: 8px;
+}
+.profile_options.active_profile {
+  display: block !important;
+}
+.profile_options ul {
+  list-style: none;
+  padding: 0.4rem 1rem;
+}
+.profile_options ul button {
+  color: #fff;
+}
+
 .search_btn {
   border-color: #0f0f0f;
   padding: 7px 10px;
@@ -119,6 +146,11 @@ header {
   margin: 8px 4px;
   height: 38px;
   width: 38px;
+}
+.search_btn .profile-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .menu_items {
