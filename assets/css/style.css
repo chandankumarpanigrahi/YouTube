@@ -19,6 +19,22 @@ body {
   color: #d7dbff;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #717171;
+}
+
 .card {
   width: 100%;
   height: 100%;
@@ -103,4 +119,94 @@ header {
   margin: 8px 4px;
   height: 38px;
   width: 38px;
+}
+
+.menu_items {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.2117647059);
+  margin-bottom: 0.6rem;
+}
+.menu_items ul {
+  list-style: none;
+  padding-left: 0;
+}
+.menu_items ul li {
+  font-size: 0.9rem;
+  color: white;
+  margin: 0 0.4rem 0.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.menu_items ul li.active_item {
+  background-color: rgba(255, 255, 255, 0.1215686275) !important;
+}
+.menu_items ul li:hover {
+  background-color: rgba(255, 255, 255, 0.053);
+}
+.menu_items ul li i {
+  margin-right: 1rem;
+}
+
+.scrollable_menu_area {
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+}
+
+.menu_items_subs {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.2117647059);
+  margin-bottom: 0.6rem;
+}
+.menu_items_subs h6 {
+  font-size: 0.9rem;
+  color: white;
+  padding: 0.2rem 0.4rem;
+}
+.menu_items_subs ul {
+  list-style: none;
+  padding-left: 0;
+}
+.menu_items_subs ul li {
+  font-size: 0.9rem;
+  color: white;
+  margin: 0 0.4rem 0.2rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.menu_items_subs ul li.active_item {
+  background-color: rgba(255, 255, 255, 0.1215686275) !important;
+}
+.menu_items_subs ul li:hover {
+  background-color: rgba(255, 255, 255, 0.053);
+}
+.menu_items_subs ul li i {
+  margin-right: 1rem;
+}
+.menu_items_subs ul li img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+
+.scrolling_item_tabs {
+  display: flex;
+  overflow-x: scroll;
+}
+.scrolling_item_tabs::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.scrolling_item_tabs .btn_tabs {
+  color: #fff;
+  background-color: rgba(44, 44, 44, 0.6196078431);
+  padding: 0.3rem 0.8rem;
+  white-space: nowrap;
+  margin-right: 0.6rem;
+}
+.scrolling_item_tabs .btn_tabs.active {
+  color: #0f0f0f;
+  background: rgba(255, 255, 255, 0.7019607843);
 }/*# sourceMappingURL=style.css.map */
